@@ -1,0 +1,160 @@
+
+@import url("https://fonts.google.com/specimen/Montserrat");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  font-family: "Montserrat";
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  width: 700px;
+  height: 500px;
+  border-radius: 7px;
+}
+
+.left-side-div,
+.middle-div,
+.right-side-div {
+  display: flex;
+  width: 150px;
+  height: 200px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.middle-div {
+  height: 220px;
+  background-color: rgba(84, 84, 140, 0.913);
+  color: white;
+}
+
+/*.right-side-div{
+    background-color: purple;
+  }*/
+.basic-btn,
+.professional-btn,
+.master-btn {
+  width: 130px;
+  background-color: rgba(69, 69, 153, 0.913);
+  color: white;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.professional-btn {
+  background-color: white;
+  color: blue;
+}
+
+.flex-top-heading {
+  font-size: 18px;
+  color: rgb(62, 62, 137);
+}
+
+#professional-heading {
+  color: white;
+}
+.flex-lower-heading {
+  font-size: 35px;
+  border-bottom: 1.5px solid grey;
+}
+
+.flex-paragraph {
+  border-bottom: 1.5px solid grey;
+  line-height: 25px;
+  font-size: 13px;
+}
+
+#middle-paragraph {
+  border-bottom: 1.5px solid white;
+}
+
+#last-para {
+  border: none;
+}
+
+#unique-para {
+  border: none;
+}
+
+.header-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  height: 70px;
+  color: blue;
+  line-height: 45px;
+}
+
+.main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.toggle-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.lower-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  border: none;
+  width: 40px;
+  height: 25px;
+  border-radius: 23px;
+  background-color: rgb(69, 69, 144);
+  position:relative;
+
+}
+
+.toggle-paragraph {
+  color: hsl(233, 13%, 49%);
+}
+
+.header-paragraph {
+  color: hsl(232, 13%, 33%);
+}
+
+input::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  right: 30%;
+  border-radius: 40%;
+  width: 30px;
+  height: 20px;
+  background-color: blueviolet;
+  transition: right .3s;
+  transform: translate(-50%, -50%);
+}
